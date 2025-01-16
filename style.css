@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -12,6 +12,13 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+p.description_pera {
+  font-size: 15px;
+  font-weight: 400;
+  color: #6d6e76;
+  line-height: 1.7;
 }
 
 .navbar {
@@ -28,7 +35,7 @@ body {
   list-style: none;
 }
 
-a {
+.menu_lists a {
   text-decoration: none;
   color: white;
   padding: 0 20px;
@@ -126,6 +133,11 @@ p.signature {
   background-color: #ffd050;
   color: black;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.read_more_btn a:hover {
+  text-decoration: underline;
 }
 
 article.container {
@@ -170,12 +182,6 @@ p.posted_by {
   color: #232536;
 }
 
-.feature_box p {
-  color: #6d6e76;
-  font-size: 15px;
-  font-weight: 400;
-}
-
 span.publisher {
   color: hsl(261, 57%, 42%);
   font-weight: 500;
@@ -210,10 +216,111 @@ span.publisher {
 
 .post {
   margin-left: 20px;
-  padding: 25px;
+  padding: 22px;
+  color: #000000;
+}
+.post a {
+  color: black;
+  text-decoration: none;
+  padding: 0;
 }
 
 p.post_title {
   font-size: 22px;
   font-weight: 600;
+}
+.post:hover {
+  background-color: #fbf6ea;
+  transition: all 0.3s;
+}
+.about {
+  background-color: #f4f0f8;
+  padding: 86px 70px;
+  display: flex;
+  gap: 50px;
+}
+.flex_about {
+  width: 100%;
+}
+
+h5.about_head {
+  text-transform: uppercase;
+  color: #232536;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+p.about_title {
+  color: #232536;
+  font-size: 34px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+a.about_btn {
+  text-decoration: none;
+  color: #592ea9;
+  font-size: 15px;
+  font-weight: 600;
+}
+a.about_btn:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.about_btn {
+  padding-top: 20px;
+}
+p.mision_title {
+  color: #232536;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+/* Abount section End */
+/* Catagory section start */
+section.catagory_container {
+  margin: 100px 0;
+}
+
+h2.catagory_head {
+  text-align: center;
+  color: #232536;
+  font-size: 28px;
+}
+
+.catagory_cards {
+  display: flex;
+  margin-top: 50px;
+  gap: 25px;
+}
+
+.flex_catagory {
+  border: 1px solid #7979812b;
+  box-sizing: border-box;
+  padding: 35px 25px;
+}
+
+.flex_catagory:hover {
+  background-color: #ffd050;
+  transition: 0.3s;
+}
+
+.cat_card_icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: hsl(42, 68%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+p.catagory_title {
+  color: #232536;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 15px 0;
 }

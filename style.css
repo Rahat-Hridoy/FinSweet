@@ -553,20 +553,35 @@ p.profile_location {
   font-size: 16px;
   font-weight: 400;
 }
-
-.back_forward_btn {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.left_right_arrows {
   position: absolute;
-  right: 110px;
-  bottom: 80px;
+  right: 80px;
+  bottom: 120px;
+  display: flex;
+  gap: 20px;
 }
 
-.forward_btn img {
-  transform: rotate(180deg);
+.arrow_btn {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
 }
 
+.arrow_btn:hover {
+  cursor: pointer;
+  background-color: #6d6e7694;
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+.arrow_btn:active {
+  background-color: rgba(9, 6, 187, 0.644);
+}
+/* Testimonial Section End  */
+/* Join Section Start */
 section.join_section_container {
   text-align: center;
   line-height: 1.6;
@@ -579,6 +594,8 @@ p.join_title {
   margin-bottom: 15px;
 }
 
+/* Join section End */
+/* Footer section Start */
 footer {
   background-color: #101018;
 }
@@ -639,7 +656,7 @@ footer {
 }
 .footer_social_contact img {
   width: 20px;
-  fill: white;
+  filter: invert(1);
 }
 
 .footer_contact p {
